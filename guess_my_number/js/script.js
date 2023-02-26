@@ -66,9 +66,9 @@ checkBtn.addEventListener('click', ()=>{
     }
     // WRONG OUTPUT
     if(guessNumber == ''){
-        gameOutput.textContent = '⛔️ Please choose a number!'
+        gameOutput.textContent = '⛔️ No number!'
     } else if(guessNumber > 20 || guessNumber < 1){
-        gameOutput.textContent = '⛔️ Please choose a number 1 - 20!'
+        gameOutput.textContent = '⛔️ Choose 1 - 20!'
     }
     // LOOSING BACKGROUND COLOR
     if(score < 1){
@@ -81,7 +81,7 @@ checkBtn.addEventListener('click', ()=>{
 // AGAIN BUTTON
 againBtn.addEventListener('click', () =>{
     randomNumber();
-    gameOutput.textContent = 'Start guessing...';
+    gameOutput.textContent = '🤙 Start guessing...';
     secretNumberOutput.textContent = '?';
     guessInput.value = null;
     document.querySelector('body').style.backgroundColor = '#222';

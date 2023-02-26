@@ -81,6 +81,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 /*INPUT GUESS NUMBER*/
@@ -101,7 +102,8 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    width: 50%;
 }
 .right p{
     margin: 20px 0px;
@@ -122,6 +124,10 @@ input{
         flex-direction: column;
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .right{
+        width: 100%;
     }
 
     .right .label-score{
